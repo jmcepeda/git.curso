@@ -32,13 +32,29 @@
     <script language="JavaScript">
         var nombre;
         var edad;
-        nombre=prompt('Ingrese su nombre:','');
-        edad=prompt('Ingrese su edad:','');
+        var profesion;
+        var estado_civil;
+        var numero_hijos;
+        nombre=prompt('Ingrese su Nombre:','');
+        edad=prompt('Ingrese su Edad:','');
+        profeson=prompt('Ingrese su Profesión:','');
+        estado_civil=prompt('Ingrese su Estado Civil:','');
+        numero_hojos=prompt('Ingrese Número de Hijos:','');
         document.write('Hola ');
         document.write(nombre);
         document.write(' asi que tienes ');
         document.write(edad);
-        document.write(' años');
+        document.write(' años, actualmente trabaja como ');
+        document.write(profesion);
+        document.write(', está ');
+        document.write(estado_civil);
+        document.write(' y tiene ');
+        document.write(numero_hijos);
+        if numero_hijos>1{
+            document.write(' hijos. ');
+        } else {
+            document.write(' hijo. ');
+        }
     </script>
 </body>
 </html>
