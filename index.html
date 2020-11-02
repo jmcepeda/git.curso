@@ -30,17 +30,20 @@
     </ul>
     <h3> Otro Título Más</h3>
     <script language="JavaScript">
-        var nombre;
-        var edad;
-        var profesion;
+        var nombre = String;
+        var edad = String;
+        var profesion=String;
         var estado_civil;
-        var numero_hijos;
+        var numero_hijos= new Number;
         nombre=prompt('Ingrese su Nombre:','');
         edad=prompt('Ingrese su Edad:','');
-        profeson=prompt('Ingrese su Profesión:','');
+        profesion=prompt('Ingrese su Profesión:','');
         estado_civil=prompt('Ingrese su Estado Civil:','');
         numero_hijos=prompt('Ingrese Número de Hijos:','');
-        document.write('Hola ');
+        while (Number.isSafeIntegerr(numero_hijos)) {
+            numero_hijos=prompt('Debe Introducir un Valor Numérico Entero. Ingrese Número de Hijos:','');
+        } 
+        document.write('Hola ' && nombre);
         document.write(nombre);
         document.write(' asi que tienes ');
         document.write(edad);
@@ -50,7 +53,7 @@
         document.write(estado_civil);
         document.write(' y tiene ');
         document.write(numero_hijos);
-        if numero_hijos>1{
+        if (numero_hijos>1) {
             document.write(' hijos. ');
         } else {
             document.write(' hijo. ');
